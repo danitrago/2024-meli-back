@@ -6,7 +6,15 @@ var logger = require("morgan");
 const dotenv = require("dotenv");
 const cors = require("cors");
 
-dotenv.config();
+if (process.env.NODE_ENV.trim() === "production") {
+  dotenv.config({
+    path: path.resolve(__dirname, "env/.env.production")
+  });
+} else {
+  dotenv.config({
+    path: path.resolve(__dirname, "env/.env.local")
+  });
+}
 
 var indexRouter = require("./routes/index");
 var searchRouter = require("./routes/search");
