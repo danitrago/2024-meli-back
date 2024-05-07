@@ -12,7 +12,6 @@ router.get("/", async function (req, res, next) {
       ...response.data
     });
   } catch (error) {
-    console.log(error);
     res.sendStatus(500);
   }
 });
