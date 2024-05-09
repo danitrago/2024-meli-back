@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "SET NODE_ENV=production && node ./bin/www",
+    "start:qa": "SET NODE_ENV=qa && node ./bin/www",
     "dev": "SET NODE_ENV=development && nodemon ./bin/www"
   },
   "dependencies": {

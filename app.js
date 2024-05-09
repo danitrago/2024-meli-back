@@ -10,6 +10,10 @@ if (process.env.NODE_ENV.trim() === "production") {
   dotenv.config({
     path: path.resolve(__dirname, "env/.env.production")
   });
+} else if (process.env.NODE_ENV.trim() === "qa") {
+  dotenv.config({
+    path: path.resolve(__dirname, "env/.env.qa")
+  });
 } else {
   dotenv.config({
     path: path.resolve(__dirname, "env/.env.local")
