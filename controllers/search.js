@@ -1,5 +1,5 @@
-const { searchProducts } = require("../services/search.service");
 const { author } = require("../utils/author");
+const { searchProducts } = require("../services/search.service");
 
 const getSearchResults = async (req, res, next) => {
   try {
