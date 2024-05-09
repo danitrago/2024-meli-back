@@ -2,7 +2,7 @@
 
 En este repositorio encontrarás el código fuente creado para la prueba técnica de Mercado Libre. He utilizado ExpressJS como lo recomendaban los enunciados de la prueba.
 
-Esta aplicación es del tipo API REST, pero se conjuga con frontend que debe estar corriendo en local:
+Esta aplicación es del tipo API REST, pero se conjuga con un frontend que debe estar corriendo en local:
 
 - [Ir al repositorio del frontend](https://github.com/danitrago/2024-meli-front)
 
