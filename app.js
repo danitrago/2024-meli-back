@@ -27,11 +27,7 @@ var productsRouter = require("./routes/products");
 var app = express();
 
 // enable CORS
-app.use(
-  cors({
-    origin: process.env.ALLOWED_ORIGIN
-  })
-);
+app.use(cors());
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
